@@ -13,7 +13,7 @@ export default class App extends Component {
         this.setState({ loading: true, message: "" });
 
         // Replace 'YOUR_ENDPOINT' with the actual endpoint URL for receiving messages
-        fetch('https://localhost:7166/Products', {
+        fetch('https://webapi20231027004927.azurewebsites.net', {
             method: 'GET',
         })
             .then((response) => {
@@ -36,7 +36,7 @@ export default class App extends Component {
         this.setState({ loading: true, message: "" });
 
         // Replace 'YOUR_ENDPOINT' with the actual endpoint URL for sending messages
-        fetch('https://localhost:7166/Products', {
+        fetch('https://webapi20231027004927.azurewebsites.net', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
